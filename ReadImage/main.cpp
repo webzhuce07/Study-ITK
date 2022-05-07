@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 
 	ReaderType::Pointer reader = ReaderType::New();
 	ConnectorType::Pointer connector = ConnectorType::New();
-	reader->SetFileName("E:\\TestData\\lenna.jpg");
+	reader->SetFileName("../0.jpg");
 	connector->SetInput(reader->GetOutput());
 	connector->Update();
 
